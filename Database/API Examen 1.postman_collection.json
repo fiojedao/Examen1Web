@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "b86d19f1-5a49-4f8d-8d30-aa3819513182",
+		"name": "API Examen 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7418211"
+	},
+	"item": [
+		{
+			"name": "Alquiler",
+			"item": [
+				{
+					"name": "Listar Alquileres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:81/examen1/alquiler",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"examen1",
+								"alquiler"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Alquiler",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:81/examen1/alquiler/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"examen1",
+								"alquiler",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Alquiler",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2023-02-21\",\r\n    \"idUsuario\": \"3\",   \r\n    \"idBicicleta\": \"4\",\r\n    \"idTarifa\": \"2\",\r\n    \"total\": \"1\",\r\n    \"extras\":[[1,2],[3,2],[9,1]]\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:81/examen1/alquiler/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"examen1",
+								"alquiler",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Alquiler",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2023-02-22\",\r\n    \"idUsuario\": \"3\",    \r\n    \"idBicicleta\": \"4\",\r\n    \"idTarifa\": \"2\",\r\n    \"total\": \"0\",\r\n    \"extras\":[[1,2],[2,2],[9,1]]\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:81/examen1/alquiler/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"examen1",
+								"alquiler",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
